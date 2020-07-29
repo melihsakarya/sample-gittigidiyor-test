@@ -9,10 +9,11 @@ public class LoginPage extends BasePage {
         super(driver);
     }
 
-    public void login(String username, String password){
-        clickByClassname("profile-name");
+    public HomePage login(String username, String password){
         setById("L-UserNameField", username);
         setById("L-PasswordField", password);
         clickById("gg-login-enter");
+        return new HomePage(driver);
     }
+    //fluently pattern
 }
