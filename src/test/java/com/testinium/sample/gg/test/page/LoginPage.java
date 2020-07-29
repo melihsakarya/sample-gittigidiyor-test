@@ -17,3 +17,4 @@ public class LoginPage extends BasePage {
     }
     //fluently pattern
 }
+//button[text() = 'Giriş']

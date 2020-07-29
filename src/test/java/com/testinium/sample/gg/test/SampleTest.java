@@ -25,6 +25,8 @@ public class SampleTest extends BaseTest {
                 .callLoginPage()
                 .login("melih", "123456")
                 .search("samsung")
-                .selectProductByIndex(new Random().nextInt(10));
+                .selectProductByIndex(2);
     }
 }
+
+//img[contains(@alt, 'cicek') and contains(@data-src, 'product')]
